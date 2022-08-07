@@ -6,7 +6,7 @@ for i in range(len(S)-1):
     if S[i] == S[i+1]:
         continue
     else:
-        if S[i] == S[0]: # 첫 번째 숫자가 기준
+        if S[i+1] == S[0]: # 첫 번째 숫자가 기준
             one += 1
         else:
             the_other += 1
