@@ -31,7 +31,7 @@ def text_compress(text, l):
 
 
 def solution(s):
-    answer = 1000
+    answer = len(s)
     for l in range(1, len(s)):
         length = text_compress(s, l)
         if answer > length:
