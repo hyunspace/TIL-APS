@@ -1,6 +1,6 @@
 def possibility(answer):
-    for data in answer:
-        x, y, struc = data
+    for structure in answer:
+        x, y, struc = structure
         # 기둥일 때
         if struc == 0:
             # 바닥 위에 있거나, 보의 한쪽 끝부분 위에 있거나, 다른 기둥 위에 있어야 함
@@ -33,11 +33,10 @@ def solution(n, build_frame):
                 answer.append([x, y, struc])
         # 최종 정렬
         answer.sort()
-
     return answer
 
-n = int(input())
-build_frame = [list(map(int, input().split())) for _ in range(8)]
+# n = int(input())
+# build_frame = [list(map(int, input().split())) for _ in range(8)]
 
 
 # 1 0 0 1
