@@ -1,4 +1,7 @@
-import math
+# 8월 2일
+# 9월 18일
+import math, sys
+input = sys.stdin.readline
 
 M, N = map(int, input().split())
 
@@ -11,7 +14,7 @@ def prime_number(number):
 
 
 for num in range(M, N+1):
-    if 1 < num <= 2:
+    if 1 < num <= 3:
         print(num)
     elif num > 3:
         flag = 1
